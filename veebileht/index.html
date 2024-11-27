@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tb0pe</title>
-    <link href="index_style.css" rel="stylesheet" type="text/css" />
+    <title>To do List</title>
+    <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-    <div class="meeskonna_konteiner">
-        <p class="meeskond">Tb0pe</p>
-        <p>Esimene Leht</p>
+    <div class="container">
+        <header>
+            <div class="logo">LOGO</div>
+            <div class="settings-icon">⚙️</div>
+        </header>
+        <main>
+            <div class="notebook">
+                <div class="spiral"></div>
+                <div class="diagonal-line"></div>
+                <p>Korrasta oma päeva,<br> saavutades rohkem</p>
+                <button class="to-do-button" onclick="goToToDo()">To Do List</button>
+            </div>
+        </main>
     </div>
-    <div class="lingid">
-        <ul class="link-nimekiri">
-            <li><a href="index2.html">Teine Leht</a></li>
-            <li><a href="index3.html">Kolmas Leht</a></li>
-          </ul>
-    </div>
-    <div class="pilt">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F023%2F206%2F137%2Foriginal%2Fcute-to-do-list-template-with-floral-element-funny-design-of-daily-planner-schedule-or-checklist-perfect-for-planning-memo-notes-and-self-organization-hand-drawn-illustration-vector.jpg&f=1&nofb=1&ipt=4ca2fd8ad72f1e75dbb93f54e77b13105fbc0d655d53ab6cdb426f36be4483e3&ipo=images" alt="">
-    </div>
-    <script src="script.js"></script>
+
+    <script>
+        function goToToDo() {
+            window.location.href = "index2.html"
+        }
+    </script>
 </body>
 </html>
