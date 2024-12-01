@@ -88,6 +88,9 @@ main {
     height: 500px;
     position: relative;
     background-color: white;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1971371.jpg&f=1&nofb=1&ipt=ed5163d1d66adf62a72c1bf25468ebbdf01d50251509bc178da70d36932fb4fc&ipo=images);
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 2px solid black;
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -128,6 +131,7 @@ main {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1.5s ease forwards;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 @keyframes fadeInUp {
@@ -146,11 +150,12 @@ main {
     border: 2px solid black;
     background-color: white;
     cursor: pointer;
+    font-family: 'Anonymous Pro', monospace;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .to-do-button:hover {
-    background-color: #f0f0f0;
+    background-color: #7c7fcb;
     transform: scale(1.1);
 }
 
