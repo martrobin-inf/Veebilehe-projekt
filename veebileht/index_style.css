@@ -1,7 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F006%2F852%2F804%2Foriginal%2Fabstract-blue-background-simple-design-for-your-website-free-vector.jpg&f=1&nofb=1&ipt=b3710a97e366633b135bb7836e1b0a0725922ea2e76a0a73d60500c07bd545ca&ipo=images);
+    background-size: cover;
+    background-position: center;
     animation: fadeIn 1.5s ease;
 }
 
@@ -27,16 +29,34 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(70, 63, 132);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.background-box {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .logo {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     border: 2px solid black;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     transition: transform 0.5s ease;
 }
@@ -46,7 +66,7 @@ header {
 }
 
 .settings-icon {
-    font-size: 48px;
+    font-size: 36px;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -92,12 +112,11 @@ main {
 
 .diagonal-line {
     position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 20px;
-    height: 400px;
-    border-left: 2px solid black;
-    transform: rotate(-30deg);
+    right: 390px;
+    top: 70px;
+    width: auto;
+    height: 450px;
+    transform: rotate(-25deg);
 }
 
 .notebook p {
