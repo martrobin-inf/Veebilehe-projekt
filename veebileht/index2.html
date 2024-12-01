@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tb0pe</title>
-    <link href="index2_style.css" rel="stylesheet" type="text/css" />
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index2_style.css">
+    <link rel="stylesheet" href="css/ühinestiil.css">
 </head>
 <body>
-    <div class="meeskonna_konteiner">
-        <p class="meeskond">Tb0pe</p>
-        <p>Teine Leht</p>
+    <header>
+        <a href="index.html" class="logo">Tb0pe</a>
+        <div class="settings-icon">⚙️</div>
+    </header>
+    <div class="container">
+        <search>
+            <input type="text" id="search" placeholder="Otsi ülesandeid..." oninput="searchTasks()">
+        </search>
+
+        <main>
+            <div class="main-content">
+                <!-- Vasak plokk ülesannete jaoks -->
+                <div class="tasks-list">
+                    <h2>Minu ülesanded</h2>
+                    <ul id="task-list"></ul>
+                </div>
+
+                <!-- Parem plokk ülesannete lisamiseks -->
+                <div class="add-task">
+                    <h2>Lisa ülesanne</h2>
+                    <input type="text" id="new-task" placeholder="Ülesande kirjeldus...">
+                    <input type="text" id="task-date" placeholder="PP.KK.AAAA" onfocus="this.type='date'" onblur="this.type='text'">
+                    <!-- Prioriteet -->
+                    <input type="text" id="priority" placeholder="Select priority" readonly onclick="togglePriority()">
+                    <div id="priority-options" class="priority-options">
+                        <div class="priority-option" onclick="setPriority('low')">Low</div>
+                        <div class="priority-option" onclick="setPriority('medium')">Medium</div>
+                        <div class="priority-option" onclick="setPriority('high')">High</div>
+                    </div>
+                    <button onclick="addTask()">Lisa ülesanne</button>
+                </div>
+            </div>
+        </main>
     </div>
-    <div class="lingid">
-        <ul class="link-nimekiri">
-            <li><a href="index.html">Esimene Leht</a></li>
-            <li><a href="index3.html">Kolmas Leht</a></li>
-          </ul>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
