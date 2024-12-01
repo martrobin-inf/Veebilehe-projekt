@@ -1,36 +1,88 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F006%2F852%2F804%2Foriginal%2Fabstract-blue-background-simple-design-for-your-website-free-vector.jpg&f=1&nofb=1&ipt=b3710a97e366633b135bb7836e1b0a0725922ea2e76a0a73d60500c07bd545ca&ipo=images);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header .settings-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
 
 .meeskonna_konteiner {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.meeskond {
-    font-size: 4rem;
-    margin: 0;
-}
-
-.lingid {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.link-list {
+.team-list {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.link-list li {
-    margin-bottom: 10px;
-  }
-  
-.link-list a {
-    text-decoration: none;
-    color: #007bff;
+.team-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-info {
+    margin-top: 20px;
     font-size: 16px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F006%2F852%2F804%2Foriginal%2Fabstract-blue-background-simple-design-for-your-website-free-vector.jpg&f=1&nofb=1&ipt=b3710a97e366633b135bb7836e1b0a0725922ea2e76a0a73d60500c07bd545ca&ipo=images);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:gover {
+    transform: scale(1.2);
 }
