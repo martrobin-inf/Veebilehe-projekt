@@ -1,0 +1,220 @@
+/* Peamised stiilid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F006%2F852%2F804%2Foriginal%2Fabstract-blue-background-simple-design-for-your-website-free-vector.jpg&f=1&nofb=1&ipt=b3710a97e366633b135bb7836e1b0a0725922ea2e76a0a73d60500c07bd545ca&ipo=images);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 28px;    
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-color: #7c7fcb;
+    border: 2px solid black;
+}
+
+.settings-icon {
+    font-size: 36px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.settings-icon:hover {
+    transform: rotate(360deg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-list, .add-task {
+    width: 48%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+li button:hover {
+    background-color: #d32f2f;
+}
+
+/* Lisavormi stiilid */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e51a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #2e2d79;
+    transition: 0.5s;
+}
+
+#priority {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#priority-options {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 10%;
+    z-index: 1;
+}
+
+.priority-option {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.priority-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ülesannete stiilid */
+.task-priority {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.task-date {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.task-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Ülesannete loetelu stiilid */
+.tasks-list ul {
+    padding: 0;
+}
+
+.tasks-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-list li button {
+    align-self: flex-start;
+    margin-top: 10px;
+    background-color: #f44336;
+}
+
+.tasks-list li button:hover {
+    background-color: #d32f2f;
+}

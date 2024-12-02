@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #f4f4f4;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.logo:hover,
+a.logo:active,
+a.logo:focus {
+    color: black;
+    outline: none;
+}
